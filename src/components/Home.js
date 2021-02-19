@@ -9,7 +9,7 @@ const fadeImages = [slide1, slide2, slide3, slide4];
 
 const Home = () => {
   return (
-    <header id="home" className="relative">
+    <header id="home" className="relative select-text">
       <Slideshow fadeImages={fadeImages} />
       <h1 className="absolute inset-y-1/2 w-full text-center text-4xl font-bold text-white z-40">
         La calidad marca la diferencia.

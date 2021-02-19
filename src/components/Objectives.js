@@ -3,7 +3,7 @@ import React from "react";
 const Objectives = () => {
   return (
     <div
-      className="h-screen w-full flex flex-col py-10 bg-pink-darkest"
+      className="h-screen w-full flex flex-col py-10 bg-wine-pattern"
       id="objectives"
     >
       <div className="w-full h-full flex justify-center mt-24">

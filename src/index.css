@@ -5,3 +5,14 @@
 html {
   scroll-behavior: smooth;
 }
+
+.bg-wine-pattern {
+  background: url("./img/fondo-patron-fibra.png");
+}
+
+::selection {
+  background: #c25866; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #c25866; /* Gecko Browsers */
+}
