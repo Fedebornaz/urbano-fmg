@@ -8,9 +8,8 @@ const Slideshow = ({ fadeImages }) => {
   const properties = {
     autoplay: true,
     arrows: false,
-    transitionDuration: 2000,
+    transitionDuration: 3000,
     pauseOnHover: false,
-    Easing: "ease",
   };
 
   return (
