@@ -16,3 +16,7 @@ html {
 ::-moz-selection {
   background: #c25866; /* Gecko Browsers */
 }
+
+#menu-toggle:checked + #menu {
+  display: block;
+}

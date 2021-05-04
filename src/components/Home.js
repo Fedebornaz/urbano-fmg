@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <header id="home" className="relative select-text">
       <Slideshow fadeImages={fadeImages} />
-      <h1 className="absolute inset-y-1/2 w-full text-center text-4xl font-bold text-white z-40">
+      <h1 className="absolute inset-y-1/2 w-full text-center text-4xl font-bold text-white z-30">
         La calidad marca la diferencia.
       </h1>
     </header>

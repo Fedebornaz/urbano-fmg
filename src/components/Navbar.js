@@ -4,27 +4,35 @@ import hamburger from "../img/menu.svg";
 
 export default function Navbar() {
   return (
-    <nav className="container min-w-full bg-white fixed z-40 flex flex-row py-6 px-8 lg:px-32 justify-between items-center shadow-lg font-bold text-base">
+    <header className="min-w-full bg-white fixed z-40 flex flex-wrap px-8 lg:px-40 py-6 md:py-0 justify-between items-center shadow-lg font-bold text-base">
       <img src={logo} width="200" alt="Logo Urbano FMG" />
 
-      <button className="md:hidden">
+      <label for="menu-toggle" className="md:hidden cursor-pointer">
         <img src={hamburger} alt="Menú hamburguesa" width="40" height="40" />
-      </button>
+      </label>
+      <input type="checkbox" className="hidden" id="menu-toggle" />
 
-      <ul className="hidden md:inline-flex justify-around text-gray-500 font-bold text-base">
-        <li className="px-5 transition-all duration-500 hover:text-pink-darkest">
-          <a href="#home">Inicio</a>
-        </li>
-        <li className="px-5 transition-all duration-500 hover:text-pink-darkest">
-          <a href="#about-us">Nosotros</a>
-        </li>
-        <li className="px-5 transition-all duration-500 hover:text-pink-darkest">
-          <a href="#objectives">Objetivos</a>
-        </li>
-        <li className="px-5 transition-all duration-500 hover:text-pink-darkest">
-          <a href="#contact">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+      <div
+        className="hidden md:flex md:items-center md:w-auto w-full justify-around text-gray-500 font-bold"
+        id="menu"
+      >
+        <nav>
+          <ul className="md:flex items-start justify-between pt-8 lg:pt-0 y-full">
+            <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
+              <a href="#home">Inicio</a>
+            </li>
+            <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
+              <a href="#about-us">Nosotros</a>
+            </li>
+            <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
+              <a href="#objectives">Objetivos</a>
+            </li>
+            <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 }
