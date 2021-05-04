@@ -18,7 +18,7 @@ const Objectives = () => {
             siniestros en el ramo automotor.
           </p>
         </div>
-        <div className="lg:w-1/3 h-full lg:p-4 pb-4 lg:pb-0 bg-white rounded-md lg:mx-6 mt-8 shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div className="lg:w-1/3 h-full lg:p-4 pb-4 lg:pb-0 bg-white rounded-md lg:mx-6 mt-8 lg:mt-0 shadow-2xl transition-all duration-300 transform hover:scale-105">
           <h1 className="mt-12 text-pink-darkest text-center text-4xl font-bold">
             Visión
           </h1>
@@ -30,7 +30,7 @@ const Objectives = () => {
             del mercado asegurador.
           </p>
         </div>
-        <div className="lg:w-1/3 w-full h-full pb-4 lg:pb-0 lg:p-4 bg-white rounded-md lg:mx-6 mt-8 shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div className="lg:w-1/3 w-full h-full pb-4 lg:pb-0 lg:p-4 bg-white rounded-md lg:mx-6 mt-8 lg:mt-0 shadow-2xl transition-all duration-300 transform hover:scale-105">
           <h1 className="mt-12 text-pink-darkest text-center text-4xl font-bold">
             Valores
           </h1>
