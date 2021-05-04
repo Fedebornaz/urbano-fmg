@@ -3,11 +3,11 @@ import React from "react";
 const Objectives = () => {
   return (
     <div
-      className="h-screen w-full flex flex-col py-10 px-28 bg-wine-pattern"
+      className="h-auto lg:h-screen w-full flex flex-col py-10 lg:px-28 bg-wine-pattern select-none"
       id="objectives"
     >
-      <div className="w-full h-full flex justify-center mt-24">
-        <div className="w-1/3 h-full p-4 bg-white rounded-md mx-6 shadow-2xl transition-all duration-300 transform hover:scale-105">
+      <div className="w-full h-full flex flex-col lg:flex-row justify-center items-center mt-24 px-6">
+        <div className="lg:w-1/3 h-full lg:p-4 pb-4 lg:pb-0 bg-white rounded-md lg:mx-6 shadow-2xl transition-all duration-300 transform hover:scale-105">
           <h1 className="mt-12 text-pink-darkest text-center text-4xl font-bold">
             Misión
           </h1>
@@ -18,7 +18,7 @@ const Objectives = () => {
             siniestros en el ramo automotor.
           </p>
         </div>
-        <div className="w-1/3 h-full p-4 bg-white rounded-md mx-6 shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div className="lg:w-1/3 h-full lg:p-4 pb-4 lg:pb-0 bg-white rounded-md lg:mx-6 mt-8 shadow-2xl transition-all duration-300 transform hover:scale-105">
           <h1 className="mt-12 text-pink-darkest text-center text-4xl font-bold">
             Visión
           </h1>
@@ -30,7 +30,7 @@ const Objectives = () => {
             del mercado asegurador.
           </p>
         </div>
-        <div className="w-1/3 h-full p-4 bg-white rounded-md mx-6 shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div className="lg:w-1/3 w-full h-full pb-4 lg:pb-0 lg:p-4 bg-white rounded-md lg:mx-6 mt-8 shadow-2xl transition-all duration-300 transform hover:scale-105">
           <h1 className="mt-12 text-pink-darkest text-center text-4xl font-bold">
             Valores
           </h1>

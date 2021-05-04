@@ -18,18 +18,26 @@ export default function Navbar() {
       >
         <nav>
           <ul className="md:flex items-start justify-between pt-8 lg:pt-0 y-full">
-            <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
-              <a href="#home">Inicio</a>
-            </li>
-            <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
-              <a href="#about-us">Nosotros</a>
-            </li>
-            <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
-              <a href="#objectives">Objetivos</a>
-            </li>
-            <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
-              <a href="#contact">Contacto</a>
-            </li>
+            <a href="#home">
+              <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
+                Inicio
+              </li>
+            </a>
+            <a href="#about-us">
+              <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
+                Nosotros
+              </li>
+            </a>
+            <a href="#objectives">
+              <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
+                Objetivos
+              </li>
+            </a>
+            <a href="#contact">
+              <li className="md:px-5 py-6 md:py-12 transition-all duration-500 border-b-4 border-transparent hover:border-pink-darkest  hover:text-pink-darkest">
+                Contacto
+              </li>
+            </a>
           </ul>
         </nav>
       </div>
