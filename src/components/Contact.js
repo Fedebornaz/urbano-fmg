@@ -7,7 +7,7 @@ init(process.env.REACT_APP_USER_ID);
 
 const Contact = () => {
   // Asigno en variables los componentes que voy a utilizar de la libreria React Hook Form.
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, watch } = useForm();
 
   // Para generar el número de contacto de la entrada en el form.
   const [contactNumber, setContactNumber] = useState("000000");
@@ -29,6 +29,11 @@ const Contact = () => {
 
     sendForm("contact_service", "contact_form", "#contact-form").then(
       function (response) {
+        const button = document.querySelector("button");
+        button.classList.remove("bg-pink-darkest");
+        button.classList.add("bg-green-500");
+        button.textContent = "Correo enviado!";
+
         console.log("SUCCESS!", response.status, response.text);
         form.reset();
       },
@@ -59,6 +64,7 @@ const Contact = () => {
               name="user_name"
               className="p-2 bg-gray-200 rounded"
               ref={register}
+              required
             />
             <input
               type="email"
@@ -66,6 +72,7 @@ const Contact = () => {
               name="user_mail"
               className="mt-2 p-2 bg-gray-200 rounded"
               ref={register}
+              required
             />
             <input
               type="text"
@@ -73,6 +80,7 @@ const Contact = () => {
               name="user_subject"
               className="mt-2 mb-2 p-2 bg-gray-200 rounded"
               ref={register}
+              required
             />
             <textarea
               placeholder="Cuerpo del mail"
@@ -81,6 +89,7 @@ const Contact = () => {
               maxLength="1500"
               rows="4"
               ref={register}
+              required
             ></textarea>
             <p className="font-light text-xs text-right">{messageCharsLeft}</p>
             <input type="hidden" name="contact_number" value={contactNumber} />
