@@ -44,7 +44,7 @@ const Contact = () => {
       id="contact"
     >
       <div className="mt-8 w-full h-full flex flex-col lg:flex-row">
-        <div className="bg-white rounded-md w-full md:w-1/2 h-auto mt-7">
+        <div className="bg-white rounded-md w-full md:w-1/2 h-auto mt-7 show-on-scroll">
           <form
             className="flex flex-col px-10 py-7"
             id="contact-form"
@@ -93,8 +93,8 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="w-full lg:w-1/2 max-h-full p-10 lg:p-14 mt-4 md:mt-0">
-          <div className="text-white">
+        <div className="w-full lg:w-1/2 max-h-full p-10 lg:p-14 mt-4 md:mt-0 text-white ">
+          <div className="show-on-scroll">
             <p className="text-2xl text-pink-darkest font-bold">
               Facundo Avila - Perito
             </p>
@@ -106,7 +106,7 @@ const Contact = () => {
             </p>
             <div className="bg-pink-darkest w-24 h-0.5 mt-2"></div>
           </div>
-          <div className="text-white mt-10">
+          <div className="mt-10 show-on-scroll">
             <p className="text-2xl text-pink-darkest font-bold">
               Mariano Caravello - Perito
             </p>
@@ -118,7 +118,7 @@ const Contact = () => {
             </p>
             <div className="bg-pink-darkest w-24 h-0.5 mt-2"></div>
           </div>
-          <div className="text-white mt-10">
+          <div className="mt-10 show-on-scroll">
             <p className="text-2xl text-pink-darkest font-bold">
               Gabriela Echeverria - Administración
             </p>
