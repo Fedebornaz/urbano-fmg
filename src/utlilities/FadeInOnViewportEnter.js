@@ -14,9 +14,6 @@ const FadeInOnViewportEnter = ({ children }) => {
           // Add the fadeIn class:
           entry.target.classList.add("animate-fade-in-down");
           entry.target.classList.remove("opacity-0");
-        } else {
-          // Otherwise remove the fadein class
-          entry.target.classList.remove("animate-fade-in-down");
         }
       });
     };

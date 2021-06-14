@@ -5,7 +5,7 @@ import hamburger from "../img/menu.svg";
 export default function Navbar() {
   return (
     <header className="min-w-full bg-white fixed z-40 flex flex-wrap px-8 lg:px-40 py-6 md:py-0 justify-between items-center shadow-lg font-bold text-base">
-      <img src={logo} className="w-28 md:w-48 lg:w-60" alt="Logo Urbano FMG" />
+      <img src={logo} className="w-36 md:w-48 lg:w-60" alt="Logo Urbano FMG" />
 
       <label for="menu-toggle" className="md:hidden cursor-pointer">
         <img src={hamburger} alt="Menú hamburguesa" width="40" height="40" />
